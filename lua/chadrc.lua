@@ -5,12 +5,29 @@
 local M = {}
 
 M.ui = {
-	theme = "onedark",
+	theme = "github_dark",
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+	tabufline = {
+		--  more opts
+		order = { "treeOffset", "buffers", "tabs", "btns", 'abc' },
+		modules = {
+		  -- You can add your custom component
+		  abc = function()
+			return "hi"
+		  end,
+		}
+	  },
+	
+	  statusline = {
+		-- more opts
+		order = {...}, -- check stl/utils.lua file in ui repo 
+		modules = {
+		  -- The default cursor module is override
+		  cursor = function()
+			return "%#BruhHl#" .. " bruh " -- the highlight group here is BruhHl,
+		  end
+		}
+	  }
 }
 
 return M
