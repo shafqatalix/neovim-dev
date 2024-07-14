@@ -5,9 +5,9 @@ To get started:
 https://nvchad.com/docs/quickstart/install/
 
 ```
-git clone https://github.com/shafqatalix/neovim-dev ~/.config/nvim && nvim
+git clone https://github.com/shafqatalix/neovim-dev ~/.config/nvim && rm -rf ~/.config/nvim/.git && nvim
 
-rm -rf ~/.config/nvim/.git
+
 ```
 
 ## Uninstall 
