@@ -6,13 +6,13 @@ https://nvchad.com/docs/quickstart/install/
 
 ```
 git clone https://github.com/shafqatalix/neovim-dev ~/.config/nvim && rm -rf ~/.config/nvim/.git && nvim
-
-
 ```
 
 ## Uninstall 
+
+### Linux / Macos (unix)
+
 ```
-# Linux / Macos (unix)
 rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
